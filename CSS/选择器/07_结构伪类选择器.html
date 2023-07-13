@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+    <style>
+        /**
+        选中的p子元素,并且p元素是父元素的第一个子元素
+         */
+        /*p:first-child {*/
+        /*    color: red;*/
+        /*}*/
+        /**
+        选中的p子元素,并且p元素是父元素的最后一个子元素
+         */
+        /*p:last-child{*/
+        /*    color: yellow;*/
+        /*}*/
+        /**
+        选中的p子元素,并且p元素是父元素的第N个子元素
+        括号里的公式可以写成：an+b的形式
+        关于N的值：
+            1、0或者不写，什么都不选中
+            2、N 选中所有的子元素
+            3、1->正无穷 选中对应序列的子元素
+            4、2n 或者 even ： 选中序列号为偶数的子元素
+            5、2n+1 或者 odd ： 选中序列号为奇数的子元素
+            6、-n+3 ： 选中前三个
+         */
+        /*#p1:nth-child(1){*/
+        /*    color: skyblue;*/
+        /*}*/
+
+        /**
+        选择第一个类型的元素：div的直接子类中的第一个p元素
+         */
+        /*div > p:first-of-type {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*div > p:nth-of-type(2) {*/
+        /*    color: green;*/
+        /*}*/
+
+        /**
+         否定伪类：除了这个标签，其他的执行
+        */
+        p:not(.notClass){
+            color: red;
+        }
+
+        /**
+        UI伪类
+         */
+        input:checked{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1">1</p>
+    <div>
+        <p>2</p>
+    </div>
+    <p class="notClass">3</p>
+    <p>4</p>
+    <p>5</p>
+</div>
+</body>
+</html>

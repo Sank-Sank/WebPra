@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /*没有选过*/
+        a:link{
+            color: black;
+        }
+        /*选过的*/
+        a:visited{
+            color: red;
+        }
+        /*鼠标悬浮状态*/
+        a:hover{
+            color: skyblue;
+        }
+        /*选中的是激活状态的元素*/
+        a:active{
+            color: green;
+        }
+
+        span:hover{
+            color: green;
+        }
+        span:active{
+            color: red;
+        }
+
+        input:focus{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<a href="https://www.baidu.com">百度</a>
+<a href="https://www.jd.com">京东</a>
+<span>Sank</span>
+<br>
+<label>
+    <input type="text">
+</label>
+<br>
+<label>
+    <input type="text">
+</label>
+<br>
+<label>
+    <input type="text">
+</label>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        /**
+         后代选择器：只要是ul标签下的li元素都会变，无论是直接子元素还是后代元素
+         */
+        ul li{
+            color: red;
+        }
+        .olText li{
+            color: brown;
+        }
+        /**
+        子代选择器： > 选择直接子元素
+        */
+        /**
+        兄弟选择器： + 选择紧紧相邻的元素，不往上看，只往下看
+        */
+        /**
+        属性选择器：
+         [title] 选择具有title属性的标签
+         [title="诗句"] 选择具有title属性的标签，并且属性值为诗句
+         */
+        [title]{
+            color: skyblue;
+        }
+        [title="诗句"]{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <div>
+        <li>4</li>
+    </div>
+</ul>
+<hr>
+<ol class="olText">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<hr>
+<P title="诗句">岱宗夫如何，齐鲁青未了。</P>
+<P title="">造化钟神秀，阴阳割昏晓。</P>
+<P>荡胸生曾云，决眦入归鸟。</P>
+<P>会当凌绝顶，一览众山小。</P>
+</body>
+</html>

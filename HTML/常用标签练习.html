@@ -5,6 +5,107 @@
     <title>常用标签练习</title>
 </head>
 <body>
+<h1>常用标签练习</h1>
+<hr>
+<!--    HTML编写规则 -->
+<!--    规则1:块级元素中能写：内联元素、块级元素-->
+<!--    规则2:内联元素中能写：内联元素、但不能写块级元素-->
+<!--    规则3:H1-H6不能互相嵌套-->
+<!--    规则4:P标签中不能写块元素-->
+<!--    规则5:A标签不能嵌套A标签-->
+<h2>常用的文本标签</h2>
+<div>
+    <em>要着重阅读的内容</em>
+    <strong>十分重要的内容（语气比em要强）</strong>
+    <span>Span标签没有任何语意</span>
+</div>
+<hr>
+<!--超链接-->
+<h2>超链接</h2>
+<div>
+    <a href="https://www.baidu.com" target="_blank">去百度</a><br>
+    <a href="./resource/wangzi.pdf" target="_blank" download="小王子">下载小王子</a><br>
+    <a href="tel:10010">打电话</a><br>
+    <a href="mailto:1221212@qq.com">发邮件</a><br>
+    <a href="sms:10086">发短信</a><br>
+</div>
+<hr>
+<!--有序列表 ol-->
+<!--无序列表 ul-->
+<!--自定义列表 dl-->
+<h2>列表</h2>
+<div>
+    <div>有序列表</div>
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>
+            <a href="https://www.baidu.com">百度</a>
+        </li>
+    </ol>
+    <div>无序列表</div>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+    </ul>
+    <dl>
+        <dt>Firefox</dt>
+        <dt>Mozilla Firefox</dt>
+        <dt>Fx</dt>
+        <dd>
+            A free, open source, cross-platform, graphical web browser developed by the
+            Mozilla Corporation and hundreds of volunteers.
+        </dd>
+    </dl>
+</div>
+<hr>
+<h2>表格</h2>
+<table border="1">
+<!--   表格标题 -->
+    <caption>学生信息</caption>
+<!--    表格头部-->
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>民族</th>
+            <th>政治面貌</th>
+        </tr>
+    </thead>
+<!--    表格主体-->
+    <tbody>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>18</td>
+            <td>汉族</td>
+            <td>团员</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>男</td>
+            <td>20</td>
+            <td>汉族</td>
+            <td>团员</td>
+        </tr>
+    </tbody>
+<!--    表格脚注-->
+    <tfoot>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>共计2人</td>
+    </tr>
+    </tfoot>
+</table>
+
 
 </body>
 </html>

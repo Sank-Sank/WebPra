@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+</head>
+<body>
+    <h1>表单练习</h1>
+    <hr>
+    <p>表单搜索练习</p>
+    <form action="https://www.baidu.com/s">
+        <label>
+            <input type="text" name="wd">
+        </label>
+        <button>去百度搜索</button>
+    </form>
+    <br>
+    <form action="https://search.jd.com/search">
+        <label>
+            <input type="text" name="keyword">
+        </label>
+        <button>去京东搜索</button>
+    </form>
+    <hr>
+    <p>登录表单练习</p>
+    <form>
+        <span>账户:</span>
+        <label>
+            <input disabled type="text" name="account" value="张三" maxlength="10">
+        </label>
+        <br>
+        <span>密码:</span>
+        <label>
+            <input type="password" name="pwd" maxlength="8">
+        </label>
+        <br>
+        <span>性别:</span>
+        <label>
+            <input type="radio" name="gender" value="male" checked>男
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">女
+        </label>
+        <br>
+        <span>爱好:</span>
+        <label>
+            <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="drink">喝酒
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="perm">烫头
+        </label>
+        <br>
+<!--        文本域-->
+        <span>其他：</span>
+        <label>
+            <textarea name="other" cols="30" rows="10"></textarea>
+        </label>
+        <br>
+        <span>籍贯：</span>
+        <label>
+            <select name="place">
+                <option value="粤">广东</option>
+                <option value="晋">山西</option>
+                <option value="京">北京</option>
+                <option value="琼">海南</option>
+            </select>
+        </label>
+        <br>
+<!--        确认按钮第一种写法-->
+<!--        <button>确认</button>-->
+<!--        确认按钮第二种写法-->
+        <label>
+            <input type="submit" value="确认">
+        </label>
+        <label>
+            <input type="reset" value="重置">
+        </label>
+    </form>
+</body>
+</html>

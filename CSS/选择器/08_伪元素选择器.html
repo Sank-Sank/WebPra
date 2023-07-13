@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        div::first-letter{
+          color: rgba(255, 255, 255, 0.99);
+          font-size: 50px;
+        }
+        div::first-line{
+            background-color: yellow;
+        }
+        /*被鼠标选择的文字 12617。21*/
+        div::selection{
+            background-color: green;
+        }
+
+        input::placeholder{
+            color: skyblue;
+        }
+
+        p::before{
+            content: "$";
+        }
+    </style>
+</head>
+<body>
+    <div>fjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaoj<br>feioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaffjadofajfidoajifojiaojfieaojfeioafjeioaf</div>
+    <br>
+    <label>
+        <input type="text" placeholder="提示语句"/>
+    </label>
+    <p>20000</p>
+</body>
+</html>
